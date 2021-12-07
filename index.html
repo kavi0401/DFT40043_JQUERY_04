@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="themes/JQM4.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="utama">
+        <div data-role="header">
+            <h1>Laman Utama</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h1>Kedai Buku Adam</h1>
+            <p>
+                Selamat ke Kedai Buku Adam
+            </p>
+            <p>
+                Kami disini menjual pelbagai Buku disini yang murah nya agak tinggi dan memuaskan.
+
+            </p>
+        </div>
+        <div data-role="footer">
+            <a href="#utama" class="ui-btn">Utama</a>
+            <a href="#barangsukan" class="ui-btn">Senarai Buku</a>
+            <a href="#tempahan" class="ui-btn">Tempahan</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="barangsukan">
+        <div data-role="header">
+            <h1>Senarai Kategori Buku</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <ul>
+                <li>-Buku Teks Sekolah Rendah<br>
+                    -Buku Teks Sekolah Menengah<br>
+                    -Buku Komsas<br>
+                    -Buku Cerita<br>
+                    -Majalah
+
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <a href="#utama" class="ui-btn">Utama</a>
+            <a href="#barangsukan" class="ui-btn">Buku</a>
+            <a href="#tempahan" class="ui-btn">Beli</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="tempahan">
+        <div data-role="header">
+            <h1>Tempahan</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h4>!!!Membeli secara Online dan barang Jamin Selamat!!!</h4>
+            <p>
+                Sila kunjungi kedai kami
+                <br><br>
+                Kedai Buku Adam Bertam Indah <br>
+                KEPALA BATAS <br> 13200 <br> PULAU PINANG
+            </p>
+            <p>Tel: 04-347537345</p>
+
+            <h2>Borang Tempahan</h2>
+
+            <form action="simpan.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="Namaanda">Nama Anda</label></td>
+                        <td>
+                            <input type="text" name="Namaanda" id="Namaanda" size="30" required placeholder="Nama Penuh"
+                                autofocus autocomplete="on">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="no.siri.barang">No Siri Barang</label></td>
+                        <td><input type="text" name="no.siri.barang" id="no.siri.barang" required
+                                placeholder="no.siribarang" autofocus autocomplete="postal-code"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="notelefon">No.Telefon</label></td>
+                        <td><input type="text" name="notelefon" id="notelefon" minlength="10" maxlength="11" required
+                                placeholder="notelefon" autofocus autocomplete="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamat">Alamat</label></td>
+                        <td><input type="text" name="alamat" id="alamat" minlength="0" maxlength="1000" required
+                                placeholder="alamat" autofocus autocomplete="street-address"></td>
+                    </tr>
+                </table>
+
+                <button type="submit">SIMPAN</button>
+                <button type="reset">BATAL</button>
+            </form>
+        </div>
+        <div data-role="footer">
+            <a href="#utama" class="ui-btn">Utama</a>
+            <a href="#barangsukan" class="ui-btn">Senarai Buku</a>
+            <a href="#tempahan" class="ui-btn">Tempahan</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
